@@ -15,11 +15,11 @@ const Button: FC<ButtonProps> = ({
 		<button
 			{...rest}
 			disabled={isLoading}
-			className={`flex gap-4 place-items-center place-content-center border-gray-600 border-4 p-2 px-8 rounded-lg min-w-36 ${
-				!isLoading && 'hover:border-green-500'
+			className={`flex gap-4 place-items-center place-content-center border-gray-600 border-2 p-2 px-8 rounded-lg min-w-36 ${
+				!isLoading && 'hover:border-b-4 hover:border-white'
 			} transition-all ${className}`}>
 			{isLoading && (
-				<div className='w-4 h-4 animate-spin border-b-4 rounded-full'></div>
+				<div className='w-4 h-4 animate-spin border-2 border-r-0 rounded-full'></div>
 			)}
 			{children}
 		</button>
